@@ -40,6 +40,7 @@ import com.wordnik.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.jboss.ejb3.annotation.SecurityDomain;
 import org.jboss.resteasy.annotations.GZIP;
 
 import org.rhq.metrics.core.Counter;
@@ -55,6 +56,7 @@ import gnu.trove.map.hash.TLongObjectHashMap;
  * @author Heiko W. Rupp
  */
 @Api(value = "Related to metrics")
+@SecurityDomain("keycloak")
 @Path("/")
 public class MetricHandler {
 

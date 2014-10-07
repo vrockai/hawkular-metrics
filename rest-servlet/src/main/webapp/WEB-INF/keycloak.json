@@ -1,0 +1,23 @@
+{
+  "realm" : "users",
+  "resource" : "rhq-metrics",
+  "realm-public-key" : "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSmKZSEGpMQ8uSl1DG2uNPTA3Ljzl3TSpCR/zc00EZnUYEkbW6VQOnIU7+GZ9Qi1arjtoLw4Hsy6u4NO7L9T4MximEt8KLP1zoLFmC1vqr//0Yj9wb3NFHhwDUA1BYexaIiHSSNCpVYX4Dmi2V4IkFlyPwOc8iTZZmOz2uIJO1zQIDAQAB",
+  "auth-server-url" : "http://localhost:8080/auth",
+  "ssl-required" : "none",
+  "use-resource-role-mappings" : false,
+  "enable-cors" : true,
+  "cors-max-age" : 1000,
+  "bearer-only" : false,
+  "expose-token" : true,
+   "credentials" : {
+      "secret" : "234234-234234-234234"
+   },
+
+   "connection-pool-size" : 20,
+   "disable-trust-manager": true,
+   "allow-any-hostname" : true,
+   "truststore-password" : "geheim",
+
+   "client-keystore-password" : "geheim",
+   "client-key-password" : "geheim"
+}

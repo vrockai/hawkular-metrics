@@ -21,6 +21,8 @@ import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 
+import org.jboss.ejb3.annotation.SecurityDomain;
+
 import org.rhq.metrics.core.MetricsService;
 import org.rhq.metrics.core.RawNumericMetric;
 import org.rhq.metrics.restServlet.ServiceKeeper;
@@ -32,6 +34,7 @@ import org.rhq.metrics.restServlet.StringValue;
  * @author Heiko W. Rupp
  */
 @Path("/influx")
+@SecurityDomain("keycloak")
 @Produces("application/json")
 public class InfluxHandler {
 

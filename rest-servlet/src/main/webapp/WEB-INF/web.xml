@@ -32,7 +32,6 @@
   </context-param>
 
 
-<!-- TODO
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>REST</web-resource-name>
@@ -41,11 +40,16 @@
     <auth-constraint>
       <role-name>rest-user</role-name>
     </auth-constraint>
+<!-- TODO enable SSL
+    <user-data-constraint>
+                <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+-->
   </security-constraint>
 
 
   <login-config>
-    <auth-method>BASIC</auth-method>
+    <auth-method>KEYCLOAK</auth-method>
     <realm-name>RHQ REST</realm-name>
   </login-config>
 
@@ -53,5 +57,4 @@
     <description>This is valid for all principals, as we do internal checks</description>
     <role-name>rest-user</role-name>
   </security-role>
--->
 </web-app>
